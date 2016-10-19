@@ -1,6 +1,6 @@
-;
-lab5.asm
-;
+;implement stack frame
+
+
 
 .include "m2560def.inc"
 
@@ -19,14 +19,14 @@ lab5.asm
 	out SPH, r16
 		
 	
-	;call subroutine void strcpy(src, dest)
-	;push 1st parameter - src address
+;call subroutine void strcpy(src, dest)
+;push 1st parameter - src address
 	ldi r16, high(src << 1)
 	push r16
 	ldi r16, low(src <<1)
 	push r16
 
-	;push 2nd parameter - des address
+;push 2nd parameter - des address
 	ldi r16, high(dest)
 	push r16
 	ldi r16, low(dest)
