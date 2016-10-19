@@ -1,10 +1,12 @@
-;Assignment 2 Q7
+
 ;You are given two inputs A=10 and B=25. 
-;Write a simple AVR assembly program to perform various arithmetic (subtract and add) and logic operations (AND, OR, shift left once A and shift right once B) as a sequence of operations. 
+;Write a simple AVR assembly program to perform various arithmetic (subtract and add) and logic operations
+(AND, OR, shift left once A and shift right once B) as a sequence of operations. 
 ;Assume that the inputs can be directly loaded into registers using ldi instruction (define R16 to be A and R17 to be B). 
 ;Each of the results (e.g., A+B, A-B, A.B etc) needs to be temporarily stored and you can use other unused registers for this purpose. 
 ;Your goal is to minimize number of instructions. 
-;The sequence of operations and the registers where the results are stored is given by: A+B (=R4), A-B (=R5), A.B(=R6), A|B(=R7), A<<1(=R8) and B>>1(=R9).
+;The sequence of operations and the registers where the results are stored is given by: 
+;A+B (=R4), A-B (=R5), A.B(=R6), A|B(=R7), A<<1(=R8) and B>>1(=R9).
 
 .include "m2560def.inc"
 
